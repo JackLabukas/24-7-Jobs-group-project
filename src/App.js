@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 
 function App() {
-  return null;
+  return <div className="container-flex"></div>;
 }
 
 export default App;
