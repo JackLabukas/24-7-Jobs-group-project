@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import API from "../App";
 import API from "../api";
+import Salary from "../apiSalary";
 
 function SearchBar() {
   const [jobTitle, setJobTitle] = useState("");
@@ -14,6 +15,7 @@ function SearchBar() {
     event.preventDefault();
     console.log("click");
     API.getJobByTitle(jobTitle);
+    Salary.getSalary(jobTitle);
   };
 
   const showLatest = (event) => {

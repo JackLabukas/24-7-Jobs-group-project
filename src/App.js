@@ -6,12 +6,19 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 
 const testArr = JSON.parse(localStorage.getItem("Response"));
-
+const salaryArr = JSON.parse(localStorage.getItem("Salary"));
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<JobList testArr={testArr} />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <JobList testArr={testArr} />
+            </>
+          }
+        />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

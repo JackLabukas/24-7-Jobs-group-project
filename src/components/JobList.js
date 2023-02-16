@@ -44,6 +44,8 @@ function JobList(props) {
         </div>
       </div>
     );
+  } else {
+    return <SearchBar />;
   }
 }
 
