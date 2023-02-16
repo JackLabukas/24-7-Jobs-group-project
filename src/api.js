@@ -1,5 +1,4 @@
 import axios from "axios";
-import React, { useState, useTransition } from "react";
 
 export default {
   getJobByTitle(title) {
@@ -8,7 +7,7 @@ export default {
       url: "https://linkedin-jobs-search.p.rapidapi.com/",
       headers: {
         "content-type": "application/json",
-        "X-RapidAPI-Key": "0fa803d91dmsh638ccd2a2f38e03p1bbbd2jsncd24a99f6668",
+        "X-RapidAPI-Key": "f9870d5895msh47816a415e89849p191ddcjsndf029b7fe54c",
         "X-RapidAPI-Host": "linkedin-jobs-search.p.rapidapi.com",
       },
       data: `{"search_terms":"${title}","location":"uk","page":"1"}`,
@@ -18,6 +17,9 @@ export default {
       .request(options)
       .then(function (response) {
         console.log(response.data);
+        localStorage.setItem("Response", JSON.stringify(response.data));
+
+        // console.log(test);
       })
       .catch(function (error) {
         console.error(error);

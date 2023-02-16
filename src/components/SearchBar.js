@@ -16,11 +16,19 @@ function SearchBar() {
     API.getJobByTitle(jobTitle);
   };
 
+  const showLatest = (event) => {
+    event.preventDefault();
+    window.location.reload();
+  };
+
   return (
     <div>
       <input type="text" onChange={handleChange} className=""></input>
       <button onClick={handleSubmit} type="submit">
-        CLICK ME
+        Search Jobs
+      </button>
+      <button onClick={showLatest} type="submit">
+        Show Latest Results
       </button>
     </div>
   );
