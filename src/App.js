@@ -10,14 +10,11 @@ const testArr = JSON.parse(localStorage.getItem("Response"));
 function App() {
   return (
     <Router>
-      <div className="container-flex">
-        <JobList testArr={testArr} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<JobList testArr={testArr} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Router>
   );
 }
