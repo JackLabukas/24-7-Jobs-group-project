@@ -1,7 +1,5 @@
 import axios from "axios";
-
-// Export an object containing methods we'll use for accessing the Dog.Ceo API
-const jobArr = [];
+import React, { useState, useTransition } from "react";
 
 export default {
   getJobByTitle(title) {
@@ -10,7 +8,7 @@ export default {
       url: "https://linkedin-jobs-search.p.rapidapi.com/",
       headers: {
         "content-type": "application/json",
-        "X-RapidAPI-Key": "c1ec80a3b6msh5a59fdbd8715fddp1e8eb2jsn5706ec8ba70f",
+        "X-RapidAPI-Key": "0fa803d91dmsh638ccd2a2f38e03p1bbbd2jsncd24a99f6668",
         "X-RapidAPI-Host": "linkedin-jobs-search.p.rapidapi.com",
       },
       data: `{"search_terms":"${title}","location":"uk","page":"1"}`,
@@ -20,13 +18,9 @@ export default {
       .request(options)
       .then(function (response) {
         console.log(response.data);
-        jobArr.push(response.data);
-        console.log(jobArr);
       })
       .catch(function (error) {
         console.error(error);
       });
   },
 };
-
-export { jobArr };

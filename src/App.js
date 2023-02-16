@@ -1,15 +1,23 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
 import JobList from "./components/JobList";
-import jobArr from "./api";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+import axios from "axios";
 
 function App() {
   return (
-    <div className="container-flex">
-      <SearchBar />
-      {/* <JobList jobArrCopy={jobArrCopy} /> */}
-    </div>
+    <Router>
+      <div className="container-flex">
+        <SearchBar />
+
+        <Routes>
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} /> */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

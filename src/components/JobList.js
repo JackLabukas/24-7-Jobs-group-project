@@ -1,6 +1,6 @@
 import React from "react";
 
-function List(props) {
+function JobList() {
   return (
     <ul className="list-group">
       {/* {props.jobArrCopy.map((job) => (
@@ -12,4 +12,4 @@ function List(props) {
   );
 }
 
-export default List;
+export default JobList;
