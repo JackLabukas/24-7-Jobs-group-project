@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SearchBar from "./components/SearchBar";
 import JobList from "./components/JobList";
 import About from "./pages/About";
 import Contact from "./pages/Contact";

@@ -22,12 +22,25 @@ function SearchBar() {
   };
 
   return (
-    <div>
-      <input type="text" onChange={handleChange} className=""></input>
-      <button onClick={handleSubmit} type="submit">
+    <div className="d-flex justify-content-center">
+      <input
+        type="text"
+        placeholder="Your Dream Job?"
+        onChange={handleChange}
+        className=""
+      ></input>
+      <button
+        onClick={handleSubmit}
+        type="submit button"
+        className="btn btn-warning "
+      >
         Search Jobs
       </button>
-      <button onClick={showLatest} type="submit">
+      <button
+        onClick={showLatest}
+        type="submit button"
+        className="btn btn-info "
+      >
         Show Latest Results
       </button>
     </div>
