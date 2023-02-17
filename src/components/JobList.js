@@ -1,6 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import SearchBar from "../components/SearchBar";
+import { motion } from "framer-motion";
 
 // function JobList(props) {
 //   if (props.testArr) {
@@ -23,7 +24,12 @@ function JobList(props) {
         <SearchBar />
         <div className="col-sm-6">
           {props.testArr.map((job) => (
-            <div className="card m-2" key={uuidv4()}>
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 0.8 }}
+              className="card m-2"
+              key={uuidv4()}
+            >
               <div className="card-body">
                 <h5 className="card-title">{job.job_title}</h5>
                 <h6 className="card-subtitle mb-2 text-muted">
@@ -39,7 +45,7 @@ function JobList(props) {
                   Take me there!
                 </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

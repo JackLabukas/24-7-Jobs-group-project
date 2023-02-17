@@ -15,7 +15,7 @@ function App() {
           path="/"
           element={
             <>
-              <Salary salaryArr={salaryArr} />
+              {/* <Salary salaryArr={salaryArr} /> */}
               <JobList testArr={testArr} />
             </>
           }

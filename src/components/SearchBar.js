@@ -11,16 +11,21 @@ function SearchBar() {
     setJobTitle(event.target.value);
   };
 
+  const reloadPage = () => {
+    window.location.reload();
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("fetching...response");
-    // API.getJobByTitle(jobTitle);
-    Salary.getSalary(jobTitle);
+    API.getJobByTitle(jobTitle);
+    // Salary.getSalary(jobTitle);
+    setTimeout(reloadPage, 3000);
   };
 
   const showLatest = (event) => {
     event.preventDefault();
-    window.location.reload();
+    // window.location.reload();
   };
 
   return (
@@ -40,13 +45,13 @@ function SearchBar() {
       >
         Search Jobs
       </button>
-      <button
+      {/* <button
         onClick={showLatest}
         type="submit button "
         className="btn btn-info  m-2"
       >
         Show Latest Results
-      </button>
+      </button> */}
     </div>
   );
 }
