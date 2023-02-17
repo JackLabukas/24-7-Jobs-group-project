@@ -7,7 +7,7 @@ export default {
       url: "https://infosalary.p.rapidapi.com/",
       params: { job_title: `${title}` },
       headers: {
-        "X-RapidAPI-Key": "d553593baemsh1e4a30be39fe1ebp1cca13jsn9335e7d2e755",
+        "X-RapidAPI-Key": "15d799340fmsh4511f77c045618dp1abc52jsn422d40512112",
         "X-RapidAPI-Host": "infosalary.p.rapidapi.com",
       },
     };

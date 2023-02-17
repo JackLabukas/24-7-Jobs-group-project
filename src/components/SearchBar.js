@@ -13,8 +13,8 @@ function SearchBar() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("click");
-    API.getJobByTitle(jobTitle);
+    console.log("fetching...response");
+    // API.getJobByTitle(jobTitle);
     Salary.getSalary(jobTitle);
   };
 
