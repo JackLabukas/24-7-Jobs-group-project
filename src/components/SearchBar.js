@@ -18,7 +18,7 @@ function SearchBar() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("fetching...response");
-    API.getJobByTitle(jobTitle);
+    // API.getJobByTitle(jobTitle);
     // Salary.getSalary(jobTitle);
     setTimeout(reloadPage, 3000);
   };
