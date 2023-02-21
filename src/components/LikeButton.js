@@ -6,7 +6,7 @@ export default function LikeButton() {
   return (
     <div>
       <h4 onClick={() => setLike((prevState) => !prevState)}>
-        {like ? `♥` : "♡"}
+        {like ? "\u2764" : "\u2661"}
       </h4>
     </div>
   );
