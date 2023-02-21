@@ -7,13 +7,10 @@ function HowItWorks() {
 		<section>
 			<h2 id="how-title">How JobSite works</h2>
 			<div className="row justify-content-center" id="myContainer">
-				<div className="col col d-flex align-items-center justify-content-center high">
+				<div className="col col d-flex align-items-center justify-content-center" id="high-1">
 					<div className="card" id="izzy-card">
-						<h3 className="izzy-h3">
-							<span className="number" id="one">
-								1
-							</span>
-							Search for jobs in your field
+						<h3 id="heading-1">
+							<span id="number-one">1</span>Search for jobs in your field
 						</h3>
 						<p>
 							We offer a wide range of job listings in your field, from full-time to part-time to contract positions. You can filter your search results by location, salary, job type, and other criteria to find the best job matches for you. And with
@@ -21,10 +18,10 @@ function HowItWorks() {
 						</p>
 					</div>
 				</div>
-				<div className="col col d-flex align-items-center justify-content-center low">
-					<div className="card" id="izzy-card">
-						<h3 className="izzy-h3">
-							<span className="number">2</span>
+				<div className="col col d-flex align-items-center justify-content-center low" id="low">
+					<div className="card">
+						<h3 id="heading-2">
+							<span id="number-two">2</span>
 							<span>
 								Apply for jobs that interests <i>you</i>
 							</span>
@@ -36,10 +33,10 @@ function HowItWorks() {
 						</p>
 					</div>
 				</div>
-				<div className="col col d-flex align-items-center justify-content-center high">
+				<div className="col col d-flex align-items-center justify-content-center" id="high-2">
 					<div className="card izzy-card">
-						<h3 className="izzy-h3">
-							<span className="number">3</span>Get hired and start your new career
+						<h3 id="heading-3">
+							<span id="number-three">3</span>Get hired and start your new career
 						</h3>
 						<p>
 							Once you're hired, our platform will guide you through the onboarding process, including filling out any necessary paperwork and completing any required trainings. You'll have access to resources and tools to help you succeed in your
