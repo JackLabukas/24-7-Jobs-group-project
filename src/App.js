@@ -45,6 +45,7 @@ function App() {
               element={
                 <>
                   {/* <Salary salaryArr={salaryArr} /> */}
+
                   <JobList testArr={testArr} />
                 </>
               }
