@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import SearchBar from "../components/SearchBar";
 import { motion } from "framer-motion";
+import LikeButton from "./LikeButton";
+
+const testArr = JSON.parse(localStorage.getItem("Response"));
 
 // function JobList(props) {
 //   if (props.testArr) {
@@ -32,6 +35,7 @@ function JobList(props) {
             >
               <div className="card-body">
                 <h5 className="card-title">{job.job_title}</h5>
+
                 <h6 className="card-subtitle mb-2 text-muted">
                   {job.job_location}
                 </h6>
@@ -44,6 +48,7 @@ function JobList(props) {
                 <a href={job.linkedin_job_url_cleaned} className="card-link">
                   Take me there!
                 </a>
+                <LikeButton />
               </div>
             </motion.div>
           ))}
