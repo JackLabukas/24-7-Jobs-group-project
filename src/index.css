@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+    /* background: #ffffff; */
+    color: var(--steelblue) !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--lightslategrey);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--chocolate);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--light);
+}
+
+:root {
+  --primaryColor: #5fb7ea;
+  --primaryRGBA: rgba(0, 0, 0, 0.3);
+  --mainGrey: #fafafa;
+  --darkGrey: #5f5e5e;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --mainTransition: all 0.3s ease-in-out;
+  --mainSpacing: 0.3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#light {
+  --themecolor: #F8F8FF;
+  --textcolor: #282c34;
+  --bordercolor: #FFFFFF;
+  --buttonbackground: #F8F8FF;
+}
+
+#dark {
+  --themecolor: #282c34;
+  --textcolor: #F8F8FF;
+  --bordercolor: #27282c;
+  --buttonbackground: #282c34;
 }
