@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
 function About() {
-  return <SearchBar />;
+  return null;
 }
 
 export default About;
