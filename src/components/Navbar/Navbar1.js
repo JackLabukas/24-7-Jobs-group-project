@@ -36,12 +36,15 @@ function NavBar1() {
             restDelta: 0.001,
           },
         }}
-        className="navbar-brand p-5 text-info text-uppercase"
+        className="navbar-brand p-5 text-info text-uppercase display-5"
         href="/"
       >
-        JobSite
+        <div> 24/7 Jobs</div>
+        <div className="font-italic">
+          “You know that the beginning is the most important part of any work” ―
+          Plato, The Republic
+        </div>
       </motion.a>
-
       <div
         className="collapse d-flex justify-content-end navbar-collapse"
         id="navbarNavAltMarkup"

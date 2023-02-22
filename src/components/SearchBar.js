@@ -34,9 +34,9 @@ function SearchBar() {
       <div className="input-group">
         <input
           type="text"
-          placeholder="Your Dream Job?"
+          placeholder="Start by typing...Your Dream Job?"
           onChange={handleChange}
-          className="m-2 form-control"
+          className="m-2 form-control pt-4 pb-4"
         ></input>
       </div>
       <button
