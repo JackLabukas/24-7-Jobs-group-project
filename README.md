@@ -1,6 +1,6 @@
 # Jobs247
 
-## Overview:
+## Overview :
 This is a client-side single-page application for job search using the React.js programming language along with other technologies, i.e. Node.js, HTML, CSS etc. This job search application is linked with LinkedIn Api for job search that allow user to quickly find job opportunities with location-based search.
 
 
