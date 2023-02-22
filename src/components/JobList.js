@@ -30,10 +30,17 @@ function JobList(props) {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 0.8 }}
-              className="card m-4"
-              style={{ width: "90%" }}
+              className="card m-4 border border-warning"
+              style={{
+                width: "90%",
+              }}
               key={uuidv4()}
             >
+              <img
+                class="card-img-top"
+                src="https://img.freepik.com/free-vector/life-city-concept-illustration_114360-8628.jpg?w=826&t=st=1677097056~exp=1677097656~hmac=69720491dfc78a76d2351ff6966981df07143c11a1a7160c2cb51f58d93fea08"
+                alt="Card image cap"
+              ></img>
               <div className="card-body">
                 <h5 className="card-title text-uppercase">{job.job_title}</h5>
 
@@ -46,9 +53,14 @@ function JobList(props) {
                 <p className="card-text">
                   Date this job was posted - {job.posted_date}
                 </p>
-                <a href={job.linkedin_job_url_cleaned} className="card-link">
+                <a
+                  href={job.linkedin_job_url_cleaned}
+                  className="card-link btn btn-warning"
+                  target="_blank"
+                >
                   Take me there!
                 </a>
+
                 <LikeButton />
               </div>
             </motion.div>

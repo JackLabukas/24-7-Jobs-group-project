@@ -27,6 +27,8 @@ function App() {
       // body.style.background = "black";
       body.style.backgroundImage = `url('https://img.freepik.com/free-photo/los-angeles-downtown-buildings-night_649448-298.jpg?w=1800&t=st=1677092209~exp=1677092809~hmac=ad656fec6a0a744e4d4cae7e667f36b788e2e368badbcfe334c1ad3f125755ad')`;
       // body.style.color = "#dddddd"`;
+      // body.style.backgroundRepeat = "no-repeat";
+      // body.style.backgroundSize = "cover";
     } else {
       body.style.background = "#778899";
       body.style.backgroundImage = `url('https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=1380&t=st=1677092273~exp=1677092873~hmac=c15dfd8a8e5f9885d60d1bb4eae264837f850d600ecb8aaeb631bdbe90092882')`;
