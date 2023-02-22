@@ -1,18 +1,16 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import JobList from "./components/JobList";
-
 import About from "./components/How-It-Works";
-// import Contact from "./pages/Contact";
-
 import Footer from "./components/Footer/Footer";
 import Navbar1 from "./components/Navbar/Navbar1";
-
 import { createContext } from "react";
 import React, { useState, useEffect } from "react";
+import News from "./components/News";
+import SearchBar from "./components/SearchBar";
 
 const testArr = JSON.parse(localStorage.getItem("Response"));
-
+const newsArr = JSON.parse(localStorage.getItem("News"));
 export const ThemeContext = createContext(null);
 
 function App() {
@@ -37,25 +35,29 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, changeTheme }}>
       <div className="container-flex" id={theme}>
-        <Navbar1 />
-        <Router>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  {/* <Salary salaryArr={salaryArr} /> */}
+        <div className="row">
+          <Navbar1 />
+          <SearchBar />
+          <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    {/* <Salary salaryArr={salaryArr} /> */}
 
-                  <JobList testArr={testArr} />
-                </>
-              }
-            />
-            {/* <Route path ="/" element = {<Home />}/> */}
-            <Route path="/about" element={<About />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
-          </Routes>
-          <Footer />
-        </Router>
+                    <JobList testArr={testArr} />
+                    <News newsArr={newsArr} />
+                  </>
+                }
+              />
+              {/* <Route path ="/" element = {<Home />}/> */}
+              <Route path="/about" element={<About />} />
+              {/* <Route path="/contact" element={<Contact />} /> */}
+            </Routes>
+            <Footer />
+          </Router>
+        </div>
       </div>
     </ThemeContext.Provider>
   );

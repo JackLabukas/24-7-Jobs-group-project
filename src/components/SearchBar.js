@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import API from "../App";
 import API from "../api";
-import Salary from "../apiSalary";
+import News from "../apiSalary";
 
 function SearchBar() {
   const [jobTitle, setJobTitle] = useState("");
@@ -18,9 +18,10 @@ function SearchBar() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("fetching...response");
+    News.getNews(jobTitle);
     // API.getJobByTitle(jobTitle);
     // Salary.getSalary(jobTitle);
-    setTimeout(reloadPage, 3000);
+    // setTimeout(reloadPage, 3000);
   };
 
   const showLatest = (event) => {

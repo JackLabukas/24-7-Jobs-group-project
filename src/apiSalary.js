@@ -1,22 +1,22 @@
 import axios from "axios";
 
 export default {
-  getSalary(title) {
+  getNews(searchValue) {
     const options = {
       method: "GET",
-      url: "https://infosalary.p.rapidapi.com/",
-      params: { job_title: `${title}` },
-      headers: {
-        "X-RapidAPI-Key": "15d799340fmsh4511f77c045618dp1abc52jsn422d40512112",
-        "X-RapidAPI-Host": "infosalary.p.rapidapi.com",
-      },
+      url: `https://newsapi.org/v2/everything?q=${searchValue}&pageSize=20&sortBy=relevancy&apiKey=5a0c57e2736642acbab8e4a24471809d`,
+
+      // data: `{"search_terms":"${title}","location":"uk","page":"1"}`,
     };
 
     axios
       .request(options)
       .then(function (response) {
         console.log(response.data);
-        localStorage.setItem("Salary", JSON.stringify(response.data));
+        localStorage.setItem("News", JSON.stringify(response.data));
+        // localStorage.setItem("Response", JSON.stringify(response.data));
+
+        // console.log(test);
       })
       .catch(function (error) {
         console.error(error);

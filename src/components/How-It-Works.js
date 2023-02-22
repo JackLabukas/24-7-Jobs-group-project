@@ -11,7 +11,7 @@ function HowItWorks() {
           className="col col d-flex align-items-center justify-content-center"
           id="high-1"
         >
-          <div className="cards" id="izzy-cards">
+          <div className="cards bg-light" id="izzy-cards">
             <h3 id="heading-1">
               <span id="number-one">1</span>Search for jobs in your field
             </h3>
@@ -30,7 +30,7 @@ function HowItWorks() {
           className="col col d-flex align-items-center justify-content-center low"
           id="low"
         >
-          <div className="cards">
+          <div className="cards bg-light">
             <h3 id="heading-2">
               <span id="number-two">2</span>
               <span>
@@ -53,7 +53,7 @@ function HowItWorks() {
           className="col col d-flex align-items-center justify-content-center"
           id="high-2"
         >
-          <div className="cards izzy-cards">
+          <div className="cards bg-light izzy-cards">
             <h3 id="heading-3">
               <span id="number-three">3</span>Get hired and start your new
               career

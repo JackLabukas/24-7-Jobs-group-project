@@ -4,8 +4,6 @@ import SearchBar from "../components/SearchBar";
 import { motion } from "framer-motion";
 import LikeButton from "./LikeButton";
 
-const testArr = JSON.parse(localStorage.getItem("Response"));
-
 // function JobList(props) {
 //   if (props.testArr) {
 //     return (
@@ -25,16 +23,15 @@ function JobList(props) {
     return (
       // <div className="row d-flex justify-content-center">
       // <SearchBar />
-      <div className="d-flex justify-content-center">
+      <div className="col">
         {/* <SearchBar /> */}
-        <div className="row d-flex justify-content-center">
-          <SearchBar />
+        <div className="row d-flex justify-content-left">
           {props.testArr.map((job) => (
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 0.8 }}
               className="card m-2"
-              style={{ width: "80%", height: "" }}
+              style={{ width: "100%" }}
               key={uuidv4()}
             >
               <div className="card-body">
@@ -58,7 +55,6 @@ function JobList(props) {
           ))}
         </div>
       </div>
-      // </div>
     );
   } else {
     return <SearchBar />;
