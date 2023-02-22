@@ -10,13 +10,17 @@ import { motion } from "framer-motion";
 function NavBar1() {
   const [darkTheme, setDarkTheme] = useState(false);
   const { changeTheme } = useContext(ThemeContext);
-
+  // const body = document.getElementsByTagName("BODY")[0];
   const toggleTheme = () => {
     setDarkTheme(!darkTheme);
     changeTheme();
   };
+
+  // const hanldeClick = () => {
+  //   body.
+  // };
   return (
-    <nav className="navbar bg-dark navbar-expand-lg navbar-light bg-light ">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark opacity-75">
       <motion.a
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -32,7 +36,7 @@ function NavBar1() {
             restDelta: 0.001,
           },
         }}
-        className="navbar-brand p-4 text-info"
+        className="navbar-brand p-5 text-info text-uppercase"
         href="/"
       >
         JobSite
@@ -58,7 +62,7 @@ function NavBar1() {
                 restDelta: 0.001,
               },
             }}
-            className="nav-item nav-link active text-light"
+            className="nav-item nav-link active text-light text-uppercase"
             href="/"
           >
             Home
@@ -78,7 +82,7 @@ function NavBar1() {
                 restDelta: 0.001,
               },
             }}
-            className="nav-item nav-link text-light"
+            className="nav-item nav-link text-light text-uppercase"
             href="/about"
           >
             About

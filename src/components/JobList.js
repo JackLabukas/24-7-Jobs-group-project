@@ -30,12 +30,12 @@ function JobList(props) {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 0.8 }}
-              className="card m-2"
-              style={{ width: "100%" }}
+              className="card m-4"
+              style={{ width: "90%" }}
               key={uuidv4()}
             >
               <div className="card-body">
-                <h5 className="card-title">{job.job_title}</h5>
+                <h5 className="card-title text-uppercase">{job.job_title}</h5>
 
                 <h6 className="card-subtitle mb-2 text-info">
                   {job.job_location}

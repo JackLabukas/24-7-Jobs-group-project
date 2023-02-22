@@ -24,10 +24,10 @@ function SearchBar() {
     // setTimeout(reloadPage, 3000);
   };
 
-  const showLatest = (event) => {
-    event.preventDefault();
-    // window.location.reload();
-  };
+  // const showLatest = (event) => {
+  //   event.preventDefault();
+  //   // window.location.reload();
+  // };
 
   return (
     <div className="row">
@@ -42,7 +42,7 @@ function SearchBar() {
       <button
         onClick={handleSubmit}
         type="submit button"
-        className="btn btn-warning  m-2"
+        className="btn btn-warning m-2 w-50"
       >
         Search Jobs
       </button>
