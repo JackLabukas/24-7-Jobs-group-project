@@ -41,7 +41,7 @@ function App() {
       <Navbar1 />
       <div className="container" id={theme}>
         <div className="row">
-          <SearchBar />
+          {/* <SearchBar /> */}
 
           <Router>
             <Routes>
@@ -50,7 +50,7 @@ function App() {
                 element={
                   <>
                     {/* <Salary salaryArr={salaryArr} /> */}
-
+                    <SearchBar />
                     <JobList testArr={testArr} />
                     <News newsArr={newsArr} />
                   </>

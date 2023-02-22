@@ -22,20 +22,23 @@ function NavBar1() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark opacity-75">
       <motion.a
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          default: {
-            duration: 0.3,
-            ease: [0, 0.71, 0.2, 1.01],
-          },
-          scale: {
-            type: "spring",
-            damping: 5,
-            stiffness: 100,
-            restDelta: 0.001,
-          },
-        }}
+        // initial={{ opacity: 0, scale: 0.5 }}
+        // animate={{ opacity: 1, scale: 1, x: 500 }}
+        // transition={{
+        //   delay: 0.2,
+        //   default: {
+        //     duration: 0.3,
+        //     ease: [0, 0.71, 0.2, 1.01],
+        //   },
+        //   scale: {
+        //     type: "spring",
+        //     damping: 5,
+        //     stiffness: 100,
+        //     restDelta: 0.001,
+        //   },
+        // }}
+        animate={{ x: 500 }}
+        transition={{ delay: 1 }}
         className="navbar-brand p-5 text-info text-uppercase display-5"
         href="/"
       >

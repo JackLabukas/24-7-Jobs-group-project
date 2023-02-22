@@ -1,6 +1,7 @@
 import React from "react";
 // import "src/index.css"; // import CSS file
 import "../index.css";
+import { motion } from "framer-motion";
 
 function HowItWorks() {
   return (
@@ -13,7 +14,27 @@ function HowItWorks() {
         >
           <div className="cards bg-light" id="izzy-cards">
             <h3 id="heading-1">
-              <span id="number-one">1</span>Search for jobs in your field
+              <motion.span
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.2,
+                  default: {
+                    duration: 0.3,
+                    ease: [0, 0.71, 0.2, 1.01],
+                  },
+                  scale: {
+                    type: "spring",
+                    damping: 5,
+                    stiffness: 100,
+                    restDelta: 0.001,
+                  },
+                }}
+                id="number-one"
+              >
+                1
+              </motion.span>
+              Search for jobs in your field
             </h3>
             <p>
               We offer a wide range of job listings in your field, from
@@ -32,7 +53,26 @@ function HowItWorks() {
         >
           <div className="cards bg-light">
             <h3 id="heading-2">
-              <span id="number-two">2</span>
+              <motion.span
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.4,
+                  default: {
+                    duration: 0.3,
+                    ease: [0, 0.71, 0.2, 1.01],
+                  },
+                  scale: {
+                    type: "spring",
+                    damping: 5,
+                    stiffness: 100,
+                    restDelta: 0.001,
+                  },
+                }}
+                id="number-two"
+              >
+                2
+              </motion.span>
               <span>
                 Apply for jobs that interests <i>you</i>
               </span>
@@ -55,8 +95,27 @@ function HowItWorks() {
         >
           <div className="cards bg-light izzy-cards">
             <h3 id="heading-3">
-              <span id="number-three">3</span>Get hired and start your new
-              career
+              <motion.span
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 0.6,
+                  default: {
+                    duration: 0.3,
+                    ease: [0, 0.71, 0.2, 1.01],
+                  },
+                  scale: {
+                    type: "spring",
+                    damping: 5,
+                    stiffness: 100,
+                    restDelta: 0.001,
+                  },
+                }}
+                id="number-three"
+              >
+                3
+              </motion.span>
+              Get hired and start your new career
             </h3>
             <p>
               Once you're hired, our platform will guide you through the
