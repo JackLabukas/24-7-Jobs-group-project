@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Jobs247
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview:
+This is a client-side single-page application for job search using the React.js programming language along with other technologies, i.e. Node.js, HTML, CSS etc. This job search application is linked with LinkedIn Api for job search that allow user to quickly find job opportunities with location-based search.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Technologies Used
+* HTML
+* CSS
+* Javascript
+* React.js
+* Node.js
+* NPM packages
+* Bootstrap v4.6.2
+* jQuery v3.5.1
+* Moment.js v2.24.0
+* Fontawesome v6.2.0
+* LinkedIn API for job search
 
-### `npm start`
+## Demo
+Please check out the Netlify demo at .......
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
+The following instructions will enable you to get you a copy of the App up and running on your local machine for development and testing purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Installing
+Installing the app is very simple and consists of the following steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the app: git clone https://github.com/JackLabukas/group-project-2.git && cd group-project-2
+2. Install relevent packages: npm install
+3. Setup a new or existing npm package using initilizer: npm init using any terminal, i.e. VS Code
+2. Build the project: npm run build (The app will be running at localhost:3001 or 3002....3,4 etc as a default URL address)
 
-### `npm run build`
+### Running the Test
+From a terminal, i.e. VS Code, command 'npm run' or 'npm test' for testing the app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running the App
+Finally, you can run our app using this following command:
+npm start
+The App will be running on port 3001
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Built With
+React.js - A JavaScript library for building interactive user interfaces and web applications
+React Router - A JavaScript framework that lets us handle client and server-side routing in React applications
+Create React App - A comfortable environment for learning React, and is the best way to start building a new single-page application in React.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Code Editor
+We used Visual Studio Code which is a powerful, lightweight code editor for Windows, macOS and Linux.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
+If you find any problems with this app or if you have any sugestion, please feel free to create an issue for that.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact Us
+If you have any question please contact us at
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+|         Abdul Gaffar       |       Essiet Kasirim         |       Isabelle Zennag         |       Jack Labukas         |
+.       ----------------     .      -----------------       .      ------------------       .      ----------------      .
+|      Github: agaffar74     |          Kassy               |     Github: xiacodes          |     Github: Jack Labukas   |
+|   Email: hello@abdul.com   |     hello@kassy.com          |   Email: hello@izzy.com       |    Email: hello@jack.com   |
+|                            |                              |                               |                            |   
