@@ -5,7 +5,6 @@ import { BsMoonStars } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
 import { useState, useContext } from "react";
 import { ThemeContext } from "../../App";
-import About from "../How-It-Works";
 
 function Navbar() {
   const [isMenuClicked, setIsMenuClicked] = useState(false);

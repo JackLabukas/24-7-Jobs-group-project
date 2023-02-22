@@ -10,10 +10,9 @@ function Footer() {
 
   return (
     <div className={styles.footer}>
-
-      <p class="copyright">
-        © <span class="year">{year()}</span> -{" "}
-        <span class="bold"> JobSite</span>
+      <p className="copyright">
+        © <span className="year">{year()}</span> -{" "}
+        <span className="bold"> JobSite</span>
       </p>
     </div>
   );

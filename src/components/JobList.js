@@ -23,20 +23,24 @@ const testArr = JSON.parse(localStorage.getItem("Response"));
 function JobList(props) {
   if (props.testArr) {
     return (
-      <div className="row d-flex justify-content-center">
-        <SearchBar />
-        <div className="col-sm-6">
+      // <div className="row d-flex justify-content-center">
+      // <SearchBar />
+      <div className="d-flex justify-content-center">
+        {/* <SearchBar /> */}
+        <div className="row d-flex justify-content-center">
+          <SearchBar />
           {props.testArr.map((job) => (
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 0.8 }}
               className="card m-2"
+              style={{ width: "80%", height: "" }}
               key={uuidv4()}
             >
               <div className="card-body">
                 <h5 className="card-title">{job.job_title}</h5>
 
-                <h6 className="card-subtitle mb-2 text-muted">
+                <h6 className="card-subtitle mb-2 text-info">
                   {job.job_location}
                 </h6>
                 <h6 className="card-subtitle mb-2 text-warning">
@@ -54,6 +58,7 @@ function JobList(props) {
           ))}
         </div>
       </div>
+      // </div>
     );
   } else {
     return <SearchBar />;

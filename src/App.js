@@ -5,8 +5,8 @@ import JobList from "./components/JobList";
 import About from "./components/How-It-Works";
 // import Contact from "./pages/Contact";
 
-import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Navbar1 from "./components/Navbar/Navbar1";
 
 import { createContext } from "react";
 import React, { useState, useEffect } from "react";
@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     if (theme === "dark") {
-      body.style.background = "#2e363d";
+      body.style.background = "black";
       body.style.color = "#dddddd";
     } else {
       body.style.background = "#778899";
@@ -36,9 +36,9 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, changeTheme }}>
-      <div className="App" id={theme}>
+      <div className="container-flex" id={theme}>
+        <Navbar1 />
         <Router>
-          <Navbar />
           <Routes>
             <Route
               path="/"
