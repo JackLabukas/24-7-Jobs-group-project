@@ -62,8 +62,8 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Contact Us
 If you have any question please contact us at
 
-|         Abdul Gaffar       |       Essiet Kasirim         |       Isabelle Zennag         |       Jack Labukas         |
-.       ----------------     .      -----------------       .      ------------------       .      ----------------      .
-|      Github: agaffar74     |          Kassy               |     Github: xiacodes          |     Github: Jack Labukas   |
-|   Email: hello@abdul.com   |     hello@kassy.com          |   Email: hello@izzy.com       |    Email: hello@jack.com   |
-|                            |                              |                               |                            |   
+&nbsp; &nbsp; &nbsp; &nbsp; Abdul Gaffar &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; Essiet Kasirim &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; Isabelle Zennag &nbsp; &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; Jack Labukas&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | <br />
+ &nbsp; &nbsp; Github: agaffar74 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kassy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | &nbsp; &nbsp; Github: xiacodes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; Github: Jack Labukas&nbsp; &nbsp; &nbsp; | <br />
+&nbsp; &nbsp;Email: hello@abdul.com &nbsp; &nbsp;|&nbsp; &nbsp; hello@kassy.com &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; Email:  hello@izzy.com&nbsp; &nbsp;|&nbsp; &nbsp; Email: hello@jack.com&nbsp; &nbsp; &nbsp;|
+
+
