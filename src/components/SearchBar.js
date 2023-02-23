@@ -19,7 +19,7 @@ function SearchBar() {
     event.preventDefault();
     console.log("fetching...response");
     News.getNews(jobTitle);
-    API.getJobByTitle(jobTitle);
+    // API.getJobByTitle(jobTitle);
 
     setTimeout(reloadPage, 3000);
   };
