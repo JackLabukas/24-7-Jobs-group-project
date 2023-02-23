@@ -19,15 +19,10 @@ function SearchBar() {
     event.preventDefault();
     console.log("fetching...response");
     News.getNews(jobTitle);
-    // API.getJobByTitle(jobTitle);
-    // Salary.getSalary(jobTitle);
-    // setTimeout(reloadPage, 3000);
-  };
+    API.getJobByTitle(jobTitle);
 
-  // const showLatest = (event) => {
-  //   event.preventDefault();
-  //   // window.location.reload();
-  // };
+    setTimeout(reloadPage, 3000);
+  };
 
   return (
     <div className="row">
@@ -46,13 +41,6 @@ function SearchBar() {
       >
         Search Jobs
       </button>
-      {/* <button
-        onClick={showLatest}
-        type="submit button "
-        className="btn btn-info  m-2"
-      >
-        Show Latest Results
-      </button> */}
     </div>
   );
 }

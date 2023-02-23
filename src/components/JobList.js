@@ -4,27 +4,10 @@ import SearchBar from "../components/SearchBar";
 import { motion } from "framer-motion";
 import LikeButton from "./LikeButton";
 
-// function JobList(props) {
-//   if (props.testArr) {
-//     return (
-//       <ul className="list-group">
-//         {props.testArr.map((job) => (
-//           <li className="list-group-item" key={uuidv4()}>
-//             {job.company_name}
-//           </li>
-//         ))}
-//       </ul>
-//     );
-//   }
-// }
-
 function JobList(props) {
   if (props.testArr) {
     return (
-      // <div className="row d-flex justify-content-center">
-      // <SearchBar />
       <div className="col">
-        {/* <SearchBar /> */}
         <div className="row d-flex justify-content-left">
           {props.testArr.map((job) => (
             <motion.div

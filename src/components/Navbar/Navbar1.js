@@ -10,15 +10,12 @@ import { motion } from "framer-motion";
 function NavBar1() {
   const [darkTheme, setDarkTheme] = useState(false);
   const { changeTheme } = useContext(ThemeContext);
-  // const body = document.getElementsByTagName("BODY")[0];
+
   const toggleTheme = () => {
     setDarkTheme(!darkTheme);
     changeTheme();
   };
 
-  // const hanldeClick = () => {
-  //   body.
-  // };
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark opacity-75">
       <motion.a
