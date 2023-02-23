@@ -8,6 +8,7 @@ import { createContext } from "react";
 import React, { useState, useEffect } from "react";
 import News from "./components/News";
 import SearchBar from "./components/SearchBar";
+import Team from "./components/Team"
 
 const testArr = JSON.parse(localStorage.getItem("Response"));
 const newsArr = JSON.parse(localStorage.getItem("News"));
@@ -50,6 +51,7 @@ function App() {
               />
 
               <Route path="/about" element={<About />} />
+              <Route path="/team" element={<Team />} />
             </Routes>
             <Footer />
           </Router>
