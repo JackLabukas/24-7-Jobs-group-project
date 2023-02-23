@@ -21,7 +21,7 @@ function SearchBar() {
     News.getNews(jobTitle);
     // API.getJobByTitle(jobTitle);
 
-    setTimeout(reloadPage, 3000);
+    // setTimeout(reloadPage, 3000);
   };
 
   return (
