@@ -14,6 +14,7 @@ This is a client-side single-page application for job search using the React.js 
 * Bootstrap v4.6.2
 * Axios
 * Framer-Motion
+* uuidv4
 * Fontawesome v6.2.0
 * LinkedIn API for job search
 
