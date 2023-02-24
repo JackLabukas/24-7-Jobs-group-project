@@ -1,4 +1,4 @@
-# Jobs247
+# 247Jobs
 
 ## Overview :
 This is a client-side single-page application for job search using the React.js programming language along with other technologies, i.e. Node.js, HTML, CSS etc. This job search application is linked with LinkedIn Api for job search that allow user to quickly find job opportunities with location-based search.
@@ -18,6 +18,7 @@ This is a client-side single-page application for job search using the React.js 
 * LikeButton
 * Fontawesome v6.2.0
 * LinkedIn API for job search
+* News Api
 
 ## Demo
 Please check out the Netlify demo at .......
