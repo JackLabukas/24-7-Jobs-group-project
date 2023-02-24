@@ -21,7 +21,24 @@ This is a client-side single-page application for job search using the React.js 
 * News Api
 
 ## Demo
-Please check out the Netlify demo at .......
+Please check out the Netlify demo at : https://clever-licorice-1d10fe.netlify.app/
+
+Some snapshots of the live app are attached below:
+
+Snapshot of Homepage:
+
+![alt text](https://github.com/JackLabukas/24-7-Jobs-group-project/blob/main/src/components/images/snapshot1.png?raw=true)
+
+Snapshot of homepage with search results
+
+![alt text](https://github.com/JackLabukas/24-7-Jobs-group-project/blob/main/src/components/images/snapshot2.png?raw=true)
+
+Snapshot of About page:
+![alt text](https://github.com/JackLabukas/24-7-Jobs-group-project/blob/main/src/components/images/aboutpage.png?raw=true)
+
+Snapshot of Team page:
+
+![alt text](https://github.com/JackLabukas/24-7-Jobs-group-project/blob/main/src/components/images/teampage.png?raw=true)
 
 ## Getting Started
 The following instructions will enable you to get you a copy of the App up and running on your local machine for development and testing purposes.
